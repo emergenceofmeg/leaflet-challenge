@@ -17,7 +17,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 // Function to determine circle color based on the magnitude 
 function getColor(magnitude){
-    switch(true){
+   switch(true){
         case (magnitude <= 1):
             return '#ccff66';
             break;
@@ -109,5 +109,4 @@ d3.json(GeoJSONUrl).then(function(data){
     legend.addTo(myMap);
     
     // Legend source1: https://leafletjs.com/examples/choropleth/
-    // Legend source2: https://codepen.io/haakseth/pen/KQbjdO
 });
